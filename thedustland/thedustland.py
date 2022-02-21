@@ -1,7 +1,6 @@
 from requests import post, get
 from web3.auto import w3
 from threading import Thread
-from ctypes import windll
 from sys import stderr
 from loguru import logger
 from urllib3 import disable_warnings
@@ -17,7 +16,6 @@ logger.remove()
 logger.add(stderr, format="<white>{time:HH:mm:ss}</white> | <level>{level: <8}</level> | <cyan>{line}</cyan> - <white>{message}</white>")
 clear = lambda: system('cls')
 print('Telegram Channel - https://t.me/n4z4v0d\n')
-windll.kernel32.SetConsoleTitleW('TheDustland Auto Reger | by NAZAVOD')
 
 useproxy = str(input('Use tor proxy? (y/N): '))
 threads = int(input('Threads: '))
